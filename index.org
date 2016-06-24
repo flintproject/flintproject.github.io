@@ -1,0 +1,38 @@
+#+TITLE: Flint - a simulator for biological and physiological models
+#+OPTIONS: ^:nil num:nil html-postamble:nil
+#+DESCRIPTION: Flint is a simulator for biological and physiological models written in PHML and SBML.
+#+KEYWORDS: numerical analysis, physiome, systems biology
+#+HTML_LINK_HOME: http://flintproject.github.io/
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="flint.css"/>
+* About
+  Flint is a simulator for biological and physiological models written in [[http://physiodesigner.org/phml/index.html][PHML]] and/or [[http://sbml.org/][SBML]].
+  - It can solve ordinary differential equations (ODE) numerically, and more.
+  - It runs on Windows, Mac OS X, Linux, etc.
+  - It provides graphical user interface on top of command-line interface.
+  - It is open source under the MIT license.
+* Download
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-1.5.0/NEWS.org][NEWS]] about current release Flint 1.5 (2016-06-29).
+** binary distribution
+   - Windows installer for Windows 7/8/10
+     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.5.0-windows.msi][Flint-1.5.0-windows.msi]] (md5sum: b9d8447881f58afdb66cec2193818af0)
+   - Mac installer package for OS X Lion (10.7) or later:
+     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.5.0-mac.dmg][Flint-1.5.0-mac.dmg]] (md5sum: cc9c421e2b52300163fa1fd846783919)
+     - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][GateKeeper options]] if you see an error message like
+       "=... is damaged and can't be opened. You should move it to the Trash.="
+       at opening the package.
+   - RPM packages
+     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.5.0-el6.x86_64.zip][Flint-1.5.0-el6.x86_64.zip]] (md5sum: 107a024a503afd040303ded762018537)
+     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.5.0-el7.centos.x86_64.zip][Flint-1.5.0-el7.centos.x86_64.zip]] (md5sum: 1ba04b4da4c521cadae92e4a7d806dbe)
+** source distribution
+   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-1.5.0.tar.gz][Flint-1.5.0.tar.gz]]
+* Documentation
+  - [[http://flintproject.github.io/doc/flint-1.5.0-user-guide.pdf][Flint 1.5: The User Guide]]
+  - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
+  - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format pecification]]
+* Development
+  Flint's source repository is [[https://github.com/flintproject/flint][in GitHub]]. Patches are welcome.
+* Links
+  - [[http://www.physiodesigner.org/][PhysioDesigner]] project
+  - [[http://physiome.jp/][Physiome.jp]]
+* Contact
+  Send email to =flint at oist dot jp= with any questions.
