@@ -28,7 +28,7 @@
 * Documentation
   - [[http://flintproject.github.io/doc/flint-1.5.0-user-guide.pdf][Flint 1.5: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
-  - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format pecification]]
+  - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
   Flint's source repository is [[https://github.com/flintproject/flint][in GitHub]]. Patches are welcome.
 * Links
