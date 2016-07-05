@@ -2,7 +2,7 @@
 #+OPTIONS: ^:nil num:nil html-postamble:nil
 #+DESCRIPTION: Flint is a simulator for biological and physiological models written in PHML and SBML.
 #+KEYWORDS: numerical analysis, physiome, systems biology
-#+HTML_LINK_HOME: http://flintproject.github.io/
+#+HTML_LINK_HOME: https://flintproject.github.io/
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="flint.css"/>
 * About
   Flint is a simulator for biological and physiological models written in [[http://physiodesigner.org/phml/index.html][PHML]] and/or [[http://sbml.org/][SBML]].
