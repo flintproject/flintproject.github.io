@@ -14,7 +14,8 @@
   You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-1.7.0/NEWS.org][NEWS]] about current release Flint 1.7 (2016-10-31).
 ** binary distribution
    - Windows installer for Windows 7/8/10
-     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-windows.msi][Flint-1.7.0-windows.msi]] (md5sum: bc22783ac2f42dc26c777c2d7aaf5ffc)
+     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-windows.msi][Flint-1.7.0-windows.msi]] (md5sum: bc22783ac2f42dc26c777c2d7aaf5ffc)
+     - 32-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-windows.i686.msi][Flint-1.7.0-windows.i686.msi]] (md5sum: a75da681d6b7c92c4434b715cd672653)
    - Mac installer package for OS X Lion (10.7) or later:
      - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-mac.dmg][Flint-1.7.0-mac.dmg]] (md5sum: 4342289e3a9757ee8965f2ff366538be)
      - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][GateKeeper options]] if you see an error message like
