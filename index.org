@@ -11,23 +11,23 @@
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-1.7.0/NEWS.org][NEWS]] about current release Flint 1.7 (2016-10-31).
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-1.7.1/NEWS.org][NEWS]] about current release Flint 1.7.1 (2016-12-28).
 ** binary distribution
    - Windows installer for Windows 7/8/10
-     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-windows.msi][Flint-1.7.0-windows.msi]] (md5sum: bc22783ac2f42dc26c777c2d7aaf5ffc)
-     - 32-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-windows.i686.msi][Flint-1.7.0-windows.i686.msi]] (md5sum: a75da681d6b7c92c4434b715cd672653)
+     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.1-windows.x86_64.msi][Flint-1.7.1-windows.x86_64.msi]] (md5sum: 418188f20827f6efbbe955064c1d863f)
+     - 32-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.1-windows.i686.msi][Flint-1.7.1-windows.i686.msi]] (md5sum: 3609fd2693b5ef31736ec4e6446e007a)
    - Mac installer package for OS X Lion (10.7) or later:
-     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-mac.dmg][Flint-1.7.0-mac.dmg]] (md5sum: 4342289e3a9757ee8965f2ff366538be)
+     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.1-mac.dmg][Flint-1.7.1-mac.dmg]] (md5sum: 98d4b47879845d35d1e11629f996c48b)
      - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][GateKeeper options]] if you see an error message like
        "=... is damaged and can't be opened. You should move it to the Trash.="
        at opening the package. If you use macOS Sierra, follow [[http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
    - RPM packages
-     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-el6.x86_64.zip][Flint-1.7.0-el6.x86_64.zip]] (md5sum: 55c051cd5205e115972750456dcb1167)
-     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.0-el7.centos.x86_64.zip][Flint-1.7.0-el7.centos.x86_64.zip]] (md5sum: 19120f09a3f7b754040960aa2327ed83)
+     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.1-el7.centos.x86_64.zip][Flint-1.7.1-el7.centos.x86_64.zip]] (md5sum: 3289c2d3d0eb39c7bc476a928fa5aa24)
+     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.7.1-el6.x86_64.zip][Flint-1.7.1-el6.x86_64.zip]] (md5sum: 7cf9f2581431f31fd75412bbb09ad7eb)
 ** source distribution
-   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-1.7.0.tar.gz][Flint-1.7.0.tar.gz]]
+   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-1.7.1.tar.gz][Flint-1.7.1.tar.gz]]
 * Documentation
-  - [[http://flintproject.github.io/doc/flint-1.7.0-user-guide.pdf][Flint 1.7: The User Guide]]
+  - [[http://flintproject.github.io/doc/flint-1.7.1-user-guide.pdf][Flint 1.7.1: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
