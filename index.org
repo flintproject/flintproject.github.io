@@ -32,6 +32,10 @@
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
   Flint's source repository is [[https://github.com/flintproject/flint][in GitHub]]. Patches are welcome.
+* Publication
+  To cite Flint in a scientific article:
+  - Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219.
+    doi: [[https://doi.org/10.1109/SAINT.2012.40][10.1109/SAINT.2012.40]]
 * Links
   - [[http://www.physiodesigner.org/][PhysioDesigner]] project
   - [[http://physiome.jp/][Physiome.jp]]
