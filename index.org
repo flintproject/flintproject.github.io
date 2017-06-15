@@ -18,7 +18,7 @@
      - 32-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.8.0-windows.i686.msi][Flint-1.8.0-windows.i686.msi]] (md5sum: 513ea8cd3fe621ca0a9042509f3ebf80)
    - Mac installer package for OS X Mountain Lion (10.8) or later:
      - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.8.0-mac.dmg][Flint-1.8.0-mac.dmg]] (md5sum: 536139b9bdce844e34842ec892f60b81)
-     - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][GateKeeper options]] if you see an error message like
+     - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
        "=... is damaged and can't be opened. You should move it to the Trash.="
        at opening the package. If you use macOS Sierra, follow [[http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
    - RPM packages
