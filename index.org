@@ -5,29 +5,28 @@
 #+HTML_LINK_HOME: https://flintproject.github.io/
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="flint.css"/>
 * About
-  Flint is a simulator for biological and physiological models written in [[http://physiodesigner.org/phml/index.html][PHML]] and/or [[http://sbml.org/][SBML]].
+  Flint is a simulator for biological and physiological models written in [[https://www.cellml.org/][CellML]], [[http://physiodesigner.org/phml/index.html][PHML]], and/or [[http://sbml.org/][SBML]].
   - It can solve ordinary differential equations (ODE) numerically, and more.
   - It runs on Windows, macOS, Linux, etc.
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-1.9.0/NEWS.org][NEWS]] about current release Flint 1.9 (2017-11-10).
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org][NEWS]] about current release Flint 2.0 (2018-04-09).
 ** binary distribution
    - Windows installer for Windows 7/8/10
-     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.9.0-windows.x86_64.msi][Flint-1.9.0-windows.x86_64.msi]] (md5sum: 63e4939cbf0d9f0eefa16e5e5d8355c6)
-     - 32-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.9.0-windows.i686.msi][Flint-1.9.0-windows.i686.msi]] (md5sum: d5197f1d80591619a1b7baad41291ade)
+     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-windows.x86_64.msi][Flint-2.0.0-windows.x86_64.msi]] (sha1sum: 259fcd0f46c1643e5c19a52808566efeea70f3ce)
    - Mac installer package for OS X Mountain Lion (10.8) or later:
-     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.9.0-mac.dmg][Flint-1.9.0-mac.dmg]] (md5sum: 364cf4b59d2a5c96cbe894ed1757aaba)
+     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-mac.dmg][Flint-2.0.0-mac.dmg]] (sha1sum: 6dc3ce96d8a768d431d27c6dd6a503fc7f22072f)
      - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
        "=... is damaged and can't be opened. You should move it to the Trash.="
        at opening the package. If you use macOS Sierra (10.12) or higher, follow [[http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
    - RPM packages
-     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.9.0-el7.centos.x86_64.zip][Flint-1.9.0-el7.centos.x86_64.zip]] (md5sum: db0a445d722934e0fffd6bb83f1ccdb4)
-     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-1.9.0-el6.x86_64.zip][Flint-1.9.0-el6.x86_64.zip]] (md5sum: f31a64731006cb2748ff3e21d2edf7f0)
+     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el7.centos.x86_64.zip][Flint-2.0.0-el7.centos.x86_64.zip]] (sha1sum: cc3ea38ccea719e960324de8603860cd0d5b6641)
+     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el6.x86_64.zip][Flint-2.0.0-el6.x86_64.zip]] (sha1sum: c8de6ed3a96cb348c66735b3c0007d1ff797bacd)
 ** source distribution
-   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-1.9.0.tar.gz][Flint-1.9.0.tar.gz]]
+   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.0.0.tar.gz][Flint-2.0.0.tar.gz]]
 * Documentation
-  - [[http://flintproject.github.io/doc/flint-1.9.0-user-guide.pdf][Flint 1.9: The User Guide]]
+  - [[http://flintproject.github.io/doc/flint-2.0.0-user-guide.pdf][Flint 2.0: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
