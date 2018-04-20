@@ -39,4 +39,4 @@
   - [[http://www.physiodesigner.org/][PhysioDesigner]] project
   - [[http://physiome.jp/][Physiome.jp]]
 * Contact
-  Send email to =flint at oist dot jp= with any questions.
+  Send email to =tabe at fixedpoint dot jp= with any questions.
