@@ -11,7 +11,7 @@
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org][NEWS]] about Flint 2.1 released at 2018-10-15.
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.1.0/NEWS.org][NEWS]] about Flint 2.1 released at 2018-10-15.
 ** binary distribution
    - Windows installer for Windows 7 or later
      - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi][Flint-2.1.0-windows.x86_64.msi]] (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)
