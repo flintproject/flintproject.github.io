@@ -1,6 +1,6 @@
 #+TITLE: Flint - a simulator for biological and physiological models
 #+OPTIONS: ^:nil num:nil html-postamble:nil
-#+DESCRIPTION: Flint is a simulator for biological and physiological models written in PHML and SBML.
+#+DESCRIPTION: Flint is a simulator for biological and physiological models written in CellML, PHML, and SBML.
 #+KEYWORDS: numerical analysis, physiome, systems biology
 #+HTML_LINK_HOME: https://flintproject.github.io/
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="flint.css"/>
@@ -11,26 +11,26 @@
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org][NEWS]] about current release Flint 2.0 (2018-04-09).
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org][NEWS]] about Flint 2.1 released at 2018-10-15.
 ** binary distribution
-   - Windows installer for Windows 7/8/10
-     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-windows.x86_64.msi][Flint-2.0.0-windows.x86_64.msi]] (sha1sum: 259fcd0f46c1643e5c19a52808566efeea70f3ce)
+   - Windows installer for Windows 7 or later
+     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi][Flint-2.1.0-windows.x86_64.msi]] (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)
    - Mac installer package for OS X Mountain Lion (10.8) or later:
-     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-mac.dmg][Flint-2.0.0-mac.dmg]] (sha1sum: 6dc3ce96d8a768d431d27c6dd6a503fc7f22072f)
+     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-mac.dmg][Flint-2.1.0-mac.dmg]] (sha1sum: 6b58ddf6183c727a1176bfdebf7090b622fe246a)
      - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
        "=... is damaged and can't be opened. You should move it to the Trash.="
        at opening the package. If you use macOS Sierra (10.12) or higher, follow [[http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
    - RPM packages
-     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el7.centos.x86_64.zip][Flint-2.0.0-el7.centos.x86_64.zip]] (sha1sum: cc3ea38ccea719e960324de8603860cd0d5b6641)
-     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el6.x86_64.zip][Flint-2.0.0-el6.x86_64.zip]] (sha1sum: c8de6ed3a96cb348c66735b3c0007d1ff797bacd)
+     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip][Flint-2.1.0-el7.x86_64.zip]] (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)
+     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip][Flint-2.1.0-el6.x86_64.zip]] (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)
 ** source distribution
-   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.0.0.tar.gz][Flint-2.0.0.tar.gz]]
+   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz][Flint-2.1.0.tar.gz]]
 * Documentation
-  - [[http://flintproject.github.io/doc/flint-2.0.0-user-guide.pdf][Flint 2.0: The User Guide]]
+  - [[http://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf][Flint 2.1: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
-  Flint's source repository is [[https://github.com/flintproject/flint][in GitHub]]. Patches are welcome.
+  Flint's source repository is [[https://github.com/flintproject/flint][in GitHub]]. Patches and/or suggestions are welcome.
 * Publication
   To cite Flint in a scientific article:
   - Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219.

@@ -3,26 +3,33 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2018-10-15 Mon 12:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Flint - a simulator for biological and physiological models</title>
-<!-- 2018-04-20 Fri 15:21 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Takeshi Abe" />
-<meta  name="description" content="Flint is a simulator for biological and physiological models written in PHML and SBML."
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Takeshi Abe" />
+<meta name="description" content="Flint is a simulator for biological and physiological models written in CellML, PHML, and SBML."
  />
-<meta  name="keywords" content="numerical analysis, physiome, systems biology" />
+<meta name="keywords" content="numerical analysis, physiome, systems biology" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -49,27 +56,110 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -89,6 +179,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="flint.css"/>
@@ -150,135 +241,116 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">About</a></li>
-<li><a href="#sec-2">Download</a>
+<li><a href="#org39379cb">About</a></li>
+<li><a href="#org9e3fb38">Download</a>
 <ul>
-<li><a href="#sec-2-1">binary distribution</a></li>
-<li><a href="#sec-2-2">source distribution</a></li>
+<li><a href="#org0665889">binary distribution</a></li>
+<li><a href="#orge810abe">source distribution</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">Documentation</a></li>
-<li><a href="#sec-4">Development</a></li>
-<li><a href="#sec-5">Publication</a></li>
-<li><a href="#sec-6">Links</a></li>
-<li><a href="#sec-7">Contact</a></li>
+<li><a href="#org9acfb3f">Documentation</a></li>
+<li><a href="#org18ef245">Development</a></li>
+<li><a href="#orge29a672">Publication</a></li>
+<li><a href="#orgaa55031">Links</a></li>
+<li><a href="#org9d03ba5">Contact</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">About</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org39379cb" class="outline-2">
+<h2 id="org39379cb">About</h2>
+<div class="outline-text-2" id="text-org39379cb">
 <p>
 Flint is a simulator for biological and physiological models written in <a href="https://www.cellml.org/">CellML</a>, <a href="http://physiodesigner.org/phml/index.html">PHML</a>, and/or <a href="http://sbml.org/">SBML</a>.
 </p>
 <ul class="org-ul">
-<li>It can solve ordinary differential equations (ODE) numerically, and more.
-</li>
-<li>It runs on Windows, macOS, Linux, etc.
-</li>
-<li>It provides graphical user interface on top of command-line interface.
-</li>
-<li>It is open source under the MIT license.
-</li>
+<li>It can solve ordinary differential equations (ODE) numerically, and more.</li>
+<li>It runs on Windows, macOS, Linux, etc.</li>
+<li>It provides graphical user interface on top of command-line interface.</li>
+<li>It is open source under the MIT license.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Download</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org9e3fb38" class="outline-2">
+<h2 id="org9e3fb38">Download</h2>
+<div class="outline-text-2" id="text-org9e3fb38">
 <p>
-You can read <a href="https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org">NEWS</a> about current release Flint 2.0 (2018-04-09).
+You can read <a href="https://raw.githubusercontent.com/flintproject/Flint/Flint-2.0.0/NEWS.org">NEWS</a> about Flint 2.1 released at 2018-10-15.
 </p>
 </div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1">binary distribution</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org0665889" class="outline-3">
+<h3 id="org0665889">binary distribution</h3>
+<div class="outline-text-3" id="text-org0665889">
 <ul class="org-ul">
-<li>Windows installer for Windows 7/8/10
+<li>Windows installer for Windows 7 or later
 <ul class="org-ul">
-<li>64-bit version: <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-windows.x86_64.msi">Flint-2.0.0-windows.x86_64.msi</a> (sha1sum: 259fcd0f46c1643e5c19a52808566efeea70f3ce)
-</li>
-</ul>
-</li>
+<li>64-bit version: <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi">Flint-2.1.0-windows.x86_64.msi</a> (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)</li>
+</ul></li>
 <li>Mac installer package for OS X Mountain Lion (10.8) or later:
 <ul class="org-ul">
-<li><a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-mac.dmg">Flint-2.0.0-mac.dmg</a> (sha1sum: 6dc3ce96d8a768d431d27c6dd6a503fc7f22072f)
-</li>
+<li><a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-mac.dmg">Flint-2.1.0-mac.dmg</a> (sha1sum: 6b58ddf6183c727a1176bfdebf7090b622fe246a)</li>
 <li><b>note</b> that you may have to change <a href="https://support.apple.com/en-us/HT202491">Gatekeeper options</a> if you see an error message like
 "<code>... is damaged and can't be opened. You should move it to the Trash.</code>"
-at opening the package. If you use macOS Sierra (10.12) or higher, follow <a href="http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra">the alternative instruction</a> to bypass Gatekeeper.
-</li>
-</ul>
-</li>
+at opening the package. If you use macOS Sierra (10.12) or higher, follow <a href="http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra">the alternative instruction</a> to bypass Gatekeeper.</li>
+</ul></li>
 <li>RPM packages
 <ul class="org-ul">
-<li>for RHEL/CentOS 7.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el7.centos.x86_64.zip">Flint-2.0.0-el7.centos.x86_64.zip</a> (sha1sum: cc3ea38ccea719e960324de8603860cd0d5b6641)
-</li>
-<li>for RHEL/CentOS 6.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.0.0-el6.x86_64.zip">Flint-2.0.0-el6.x86_64.zip</a> (sha1sum: c8de6ed3a96cb348c66735b3c0007d1ff797bacd)
-</li>
-</ul>
-</li>
+<li>for RHEL/CentOS 7.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip">Flint-2.1.0-el7.x86_64.zip</a> (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)</li>
+<li>for RHEL/CentOS 6.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip">Flint-2.1.0-el6.x86_64.zip</a> (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)</li>
+</ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2">source distribution</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orge810abe" class="outline-3">
+<h3 id="orge810abe">source distribution</h3>
+<div class="outline-text-3" id="text-orge810abe">
 <ul class="org-ul">
-<li>source tarball: <a href="https://github.com/flintproject/Flint/archive/Flint-2.0.0.tar.gz">Flint-2.0.0.tar.gz</a>
-</li>
+<li>source tarball: <a href="https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz">Flint-2.1.0.tar.gz</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Documentation</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org9acfb3f" class="outline-2">
+<h2 id="org9acfb3f">Documentation</h2>
+<div class="outline-text-2" id="text-org9acfb3f">
 <ul class="org-ul">
-<li><a href="http://flintproject.github.io/doc/flint-2.0.0-user-guide.pdf">Flint 2.0: The User Guide</a>
-</li>
-<li><a href="https://www.youtube.com/user/PhysioDesigner">Tutorial videos on YouTube</a>
-</li>
-<li><a href="http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf">ISD format specification</a>
-</li>
+<li><a href="http://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf">Flint 2.1: The User Guide</a></li>
+<li><a href="https://www.youtube.com/user/PhysioDesigner">Tutorial videos on YouTube</a></li>
+<li><a href="http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf">ISD format specification</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4">Development</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org18ef245" class="outline-2">
+<h2 id="org18ef245">Development</h2>
+<div class="outline-text-2" id="text-org18ef245">
 <p>
-Flint's source repository is <a href="https://github.com/flintproject/flint">in GitHub</a>. Patches are welcome.
+Flint's source repository is <a href="https://github.com/flintproject/flint">in GitHub</a>. Patches and/or suggestions are welcome.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">Publication</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orge29a672" class="outline-2">
+<h2 id="orge29a672">Publication</h2>
+<div class="outline-text-2" id="text-orge29a672">
 <p>
 To cite Flint in a scientific article:
 </p>
 <ul class="org-ul">
 <li>Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219.
-doi: <a href="https://doi.org/10.1109/SAINT.2012.40">10.1109/SAINT.2012.40</a>
-</li>
+doi: <a href="https://doi.org/10.1109/SAINT.2012.40">10.1109/SAINT.2012.40</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">Links</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgaa55031" class="outline-2">
+<h2 id="orgaa55031">Links</h2>
+<div class="outline-text-2" id="text-orgaa55031">
 <ul class="org-ul">
-<li><a href="http://www.physiodesigner.org/">PhysioDesigner</a> project
-</li>
-<li><a href="http://physiome.jp/">Physiome.jp</a>
-</li>
+<li><a href="http://www.physiodesigner.org/">PhysioDesigner</a> project</li>
+<li><a href="http://physiome.jp/">Physiome.jp</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">Contact</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org9d03ba5" class="outline-2">
+<h2 id="org9d03ba5">Contact</h2>
+<div class="outline-text-2" id="text-org9d03ba5">
 <p>
 Send email to <code>tabe at fixedpoint dot jp</code> with any questions.
 </p>
