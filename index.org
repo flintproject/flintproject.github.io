@@ -11,22 +11,24 @@
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.1.0/NEWS.org][NEWS]] about Flint 2.1 released at 2018-10-15.
+  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.1.1/NEWS.org][NEWS]] about Flint 2.1 released at 2018-10-15.
+
+  Flint 2.1.1 has been available for macOS at 2019-02-01, which is just for a quick fix of a [[https://github.com/flintproject/Flint/issues/6][crash]] reproduced only with Flint 2.1 installed by the macOS package.
 ** binary distribution
    - Windows installer for Windows 7 or later
-     - 64-bit version: [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi][Flint-2.1.0-windows.x86_64.msi]] (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)
-   - Mac installer package for OS X Mountain Lion (10.8) or later:
-     - [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-mac.dmg][Flint-2.1.0-mac.dmg]] (sha1sum: 6b58ddf6183c727a1176bfdebf7090b622fe246a)
+     - 64-bit version: [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi][Flint-2.1.0-windows.x86_64.msi]] (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)
+   - Mac installer package for OS X Mavericks (10.9) or later:
+     - [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.1-mac.dmg][Flint-2.1.1-mac.dmg]] (sha1sum: 8892329648cd95a9c747e20d89b014074eeba0e0)
      - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
        "=... is damaged and can't be opened. You should move it to the Trash.="
-       at opening the package. If you use macOS Sierra (10.12) or higher, follow [[http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
+       at opening the package. If you use macOS Sierra (10.12) or higher, follow [[https://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
    - RPM packages
-     - for RHEL/CentOS 7.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip][Flint-2.1.0-el7.x86_64.zip]] (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)
-     - for RHEL/CentOS 6.x (x86_64): [[http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip][Flint-2.1.0-el6.x86_64.zip]] (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)
+     - for RHEL/CentOS 7.x (x86_64): [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip][Flint-2.1.0-el7.x86_64.zip]] (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)
+     - for RHEL/CentOS 6.x (x86_64): [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip][Flint-2.1.0-el6.x86_64.zip]] (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)
 ** source distribution
-   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz][Flint-2.1.0.tar.gz]]
+   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz][Flint-2.1.0.tar.gz]] or [[https://github.com/flintproject/Flint/archive/Flint-2.1.1.tar.gz][Flint-2.1.1.tar.gz]]
 * Documentation
-  - [[http://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf][Flint 2.1: The User Guide]]
+  - [[https://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf][Flint 2.1: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development

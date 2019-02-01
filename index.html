@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-10-15 Mon 12:43 -->
+<!-- 2019-02-01 Fri 20:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Flint - a simulator for biological and physiological models</title>
@@ -241,24 +241,24 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb82edfe">About</a></li>
-<li><a href="#org1536b8b">Download</a>
+<li><a href="#org69d7ac5">About</a></li>
+<li><a href="#org344253d">Download</a>
 <ul>
-<li><a href="#org0e731e0">binary distribution</a></li>
-<li><a href="#org67890b2">source distribution</a></li>
+<li><a href="#org6e9cdfe">binary distribution</a></li>
+<li><a href="#org36cb4c7">source distribution</a></li>
 </ul>
 </li>
-<li><a href="#org3545309">Documentation</a></li>
-<li><a href="#org3a785e1">Development</a></li>
-<li><a href="#org4f6513f">Publication</a></li>
-<li><a href="#orga165b60">Links</a></li>
-<li><a href="#orgcd13c48">Contact</a></li>
+<li><a href="#org336743a">Documentation</a></li>
+<li><a href="#orga5e809c">Development</a></li>
+<li><a href="#org8493e9e">Publication</a></li>
+<li><a href="#org49ac951">Links</a></li>
+<li><a href="#orgc750b07">Contact</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb82edfe" class="outline-2">
-<h2 id="orgb82edfe">About</h2>
-<div class="outline-text-2" id="text-orgb82edfe">
+<div id="outline-container-org69d7ac5" class="outline-2">
+<h2 id="org69d7ac5">About</h2>
+<div class="outline-text-2" id="text-org69d7ac5">
 <p>
 Flint is a simulator for biological and physiological models written in <a href="https://www.cellml.org/">CellML</a>, <a href="http://physiodesigner.org/phml/index.html">PHML</a>, and/or <a href="http://sbml.org/">SBML</a>.
 </p>
@@ -270,66 +270,70 @@ Flint is a simulator for biological and physiological models written in <a href=
 </ul>
 </div>
 </div>
-<div id="outline-container-org1536b8b" class="outline-2">
-<h2 id="org1536b8b">Download</h2>
-<div class="outline-text-2" id="text-org1536b8b">
+<div id="outline-container-org344253d" class="outline-2">
+<h2 id="org344253d">Download</h2>
+<div class="outline-text-2" id="text-org344253d">
 <p>
-You can read <a href="https://raw.githubusercontent.com/flintproject/Flint/Flint-2.1.0/NEWS.org">NEWS</a> about Flint 2.1 released at 2018-10-15.
+You can read <a href="https://raw.githubusercontent.com/flintproject/Flint/Flint-2.1.1/NEWS.org">NEWS</a> about Flint 2.1 released at 2018-10-15.
+</p>
+
+<p>
+Flint 2.1.1 has been available for macOS at 2019-02-01, which is just for a quick fix of a <a href="https://github.com/flintproject/Flint/issues/6">crash</a> reproduced only with Flint 2.1 installed by the macOS package.
 </p>
 </div>
-<div id="outline-container-org0e731e0" class="outline-3">
-<h3 id="org0e731e0">binary distribution</h3>
-<div class="outline-text-3" id="text-org0e731e0">
+<div id="outline-container-org6e9cdfe" class="outline-3">
+<h3 id="org6e9cdfe">binary distribution</h3>
+<div class="outline-text-3" id="text-org6e9cdfe">
 <ul class="org-ul">
 <li>Windows installer for Windows 7 or later
 <ul class="org-ul">
-<li>64-bit version: <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi">Flint-2.1.0-windows.x86_64.msi</a> (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)</li>
+<li>64-bit version: <a href="https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-windows.x86_64.msi">Flint-2.1.0-windows.x86_64.msi</a> (sha1sum: 078be96aa9b8ad0c0d405bb03f77ac586052c173)</li>
 </ul></li>
-<li>Mac installer package for OS X Mountain Lion (10.8) or later:
+<li>Mac installer package for OS X Mavericks (10.9) or later:
 <ul class="org-ul">
-<li><a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-mac.dmg">Flint-2.1.0-mac.dmg</a> (sha1sum: 6b58ddf6183c727a1176bfdebf7090b622fe246a)</li>
+<li><a href="https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.1-mac.dmg">Flint-2.1.1-mac.dmg</a> (sha1sum: 8892329648cd95a9c747e20d89b014074eeba0e0)</li>
 <li><b>note</b> that you may have to change <a href="https://support.apple.com/en-us/HT202491">Gatekeeper options</a> if you see an error message like
 "<code>... is damaged and can't be opened. You should move it to the Trash.</code>"
-at opening the package. If you use macOS Sierra (10.12) or higher, follow <a href="http://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra">the alternative instruction</a> to bypass Gatekeeper.</li>
+at opening the package. If you use macOS Sierra (10.12) or higher, follow <a href="https://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra">the alternative instruction</a> to bypass Gatekeeper.</li>
 </ul></li>
 <li>RPM packages
 <ul class="org-ul">
-<li>for RHEL/CentOS 7.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip">Flint-2.1.0-el7.x86_64.zip</a> (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)</li>
-<li>for RHEL/CentOS 6.x (x86_64): <a href="http://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip">Flint-2.1.0-el6.x86_64.zip</a> (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)</li>
+<li>for RHEL/CentOS 7.x (x86_64): <a href="https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el7.x86_64.zip">Flint-2.1.0-el7.x86_64.zip</a> (sha1sum: 2b4c5474926a486749558415369d77d8bb0c0c7f)</li>
+<li>for RHEL/CentOS 6.x (x86_64): <a href="https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.1.0-el6.x86_64.zip">Flint-2.1.0-el6.x86_64.zip</a> (sha1sum: a503e712d0c89ccb6f0efafbca12a213a02bf159)</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org67890b2" class="outline-3">
-<h3 id="org67890b2">source distribution</h3>
-<div class="outline-text-3" id="text-org67890b2">
+<div id="outline-container-org36cb4c7" class="outline-3">
+<h3 id="org36cb4c7">source distribution</h3>
+<div class="outline-text-3" id="text-org36cb4c7">
 <ul class="org-ul">
-<li>source tarball: <a href="https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz">Flint-2.1.0.tar.gz</a></li>
+<li>source tarball: <a href="https://github.com/flintproject/Flint/archive/Flint-2.1.0.tar.gz">Flint-2.1.0.tar.gz</a> or <a href="https://github.com/flintproject/Flint/archive/Flint-2.1.1.tar.gz">Flint-2.1.1.tar.gz</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org3545309" class="outline-2">
-<h2 id="org3545309">Documentation</h2>
-<div class="outline-text-2" id="text-org3545309">
+<div id="outline-container-org336743a" class="outline-2">
+<h2 id="org336743a">Documentation</h2>
+<div class="outline-text-2" id="text-org336743a">
 <ul class="org-ul">
-<li><a href="http://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf">Flint 2.1: The User Guide</a></li>
+<li><a href="https://flintproject.github.io/doc/flint-2.1.0-user-guide.pdf">Flint 2.1: The User Guide</a></li>
 <li><a href="https://www.youtube.com/user/PhysioDesigner">Tutorial videos on YouTube</a></li>
 <li><a href="http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf">ISD format specification</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3a785e1" class="outline-2">
-<h2 id="org3a785e1">Development</h2>
-<div class="outline-text-2" id="text-org3a785e1">
+<div id="outline-container-orga5e809c" class="outline-2">
+<h2 id="orga5e809c">Development</h2>
+<div class="outline-text-2" id="text-orga5e809c">
 <p>
 Flint's source repository is <a href="https://github.com/flintproject/flint">in GitHub</a>. Patches and/or suggestions are welcome.
 </p>
 </div>
 </div>
-<div id="outline-container-org4f6513f" class="outline-2">
-<h2 id="org4f6513f">Publication</h2>
-<div class="outline-text-2" id="text-org4f6513f">
+<div id="outline-container-org8493e9e" class="outline-2">
+<h2 id="org8493e9e">Publication</h2>
+<div class="outline-text-2" id="text-org8493e9e">
 <p>
 To cite Flint in a scientific article:
 </p>
@@ -339,18 +343,18 @@ doi: <a href="https://doi.org/10.1109/SAINT.2012.40">10.1109/SAINT.2012.40</a></
 </ul>
 </div>
 </div>
-<div id="outline-container-orga165b60" class="outline-2">
-<h2 id="orga165b60">Links</h2>
-<div class="outline-text-2" id="text-orga165b60">
+<div id="outline-container-org49ac951" class="outline-2">
+<h2 id="org49ac951">Links</h2>
+<div class="outline-text-2" id="text-org49ac951">
 <ul class="org-ul">
 <li><a href="http://www.physiodesigner.org/">PhysioDesigner</a> project</li>
 <li><a href="http://physiome.jp/">Physiome.jp</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcd13c48" class="outline-2">
-<h2 id="orgcd13c48">Contact</h2>
-<div class="outline-text-2" id="text-orgcd13c48">
+<div id="outline-container-orgc750b07" class="outline-2">
+<h2 id="orgc750b07">Contact</h2>
+<div class="outline-text-2" id="text-orgc750b07">
 <p>
 Send email to <code>tabe at fixedpoint dot jp</code> with any questions.
 </p>
