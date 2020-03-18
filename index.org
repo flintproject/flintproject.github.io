@@ -11,21 +11,22 @@
   - It provides graphical user interface on top of command-line interface.
   - It is open source under the MIT license.
 * Download
-  You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.2.0/NEWS.org][NEWS]] about Flint 2.2 released at 2019-06-19.
+You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/NEWS.org][NEWS]] about Flint 2.3 released at 2020-03-18.
 ** binary distribution
-   - Windows installer for Windows 7 or later
-     - 64-bit version: [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.2.0-windows.x86_64.msi][Flint-2.2.0-windows.x86_64.msi]] (sha1sum: cabc15938315e672433269dc815ff87fc63d1923)
-   - Mac installer package for OS X Mavericks (10.9) or later:
-     - [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.2.0-mac.dmg][Flint-2.2.0-mac.dmg]] (sha1sum: c81ef31de25deadc65a9d288250ef499c4e522d2)
-     - *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
-       "=... is damaged and can't be opened. You should move it to the Trash.="
-       at opening the package. If you use macOS Sierra (10.12) or higher, follow [[https://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
-   - RPM packages
-     - for RHEL/CentOS 7.x (x86_64): [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.2.0-el7.x86_64.zip][Flint-2.2.0-el7.x86_64.zip]] (sha1sum: 88c282f95303049a9bdb5f96a3cee0751c925890)
+*** Windows installer for Windows 7 or later
+- 64-bit version: [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.3.0-windows.x86_64.msi][Flint-2.3.0-windows.x86_64.msi]] (sha1sum: ad4941b5831bbb646688488f90da3fb0a3670c62)
+*** Mac installer package for OS X Yosemite (10.10) or later:
+- [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.3.0-mac.dmg][Flint-2.3.0-mac.dmg]] (sha1sum: 0fa0370e58c6fa91b251cff1b6a03aa0eb5b9d4d)
+- *note* that you may have to change [[https://support.apple.com/en-us/HT202491][Gatekeeper options]] if you see an error message like
+  "=... is damaged and can't be opened. You should move it to the Trash.="
+  at opening the package. If you use macOS Sierra (10.12) or higher, follow [[https://apple.stackexchange.com/questions/243687/allow-applications-downloaded-from-anywhere-in-macos-sierra][the alternative instruction]] to bypass Gatekeeper.
+*** RPM packages
+- For RHEL/CentOS 8 (x86_64): [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.3.0-el8.x86_64.zip][Flint-2.3.0-el8.x86_64.zip]] (sha1sum: 5e73405e13e7e866b43d69761a84110f53d14958)
+- For RHEL/CentOS 7 (x86_64): [[https://downloads.sourceforge.net/project/flintproject/Flint/Flint-2.3.0-el7.x86_64.zip][Flint-2.3.0-el7.x86_64.zip]] (sha1sum: 933bf59723879efbaa0f6eaeb6ab5ba89b3c469a)
 ** source distribution
-   - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.2.0.tar.gz][Flint-2.2.0.tar.gz]]
+- source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.3.0.tar.gz][Flint-2.3.0.tar.gz]]
 * Documentation
-  - [[https://flintproject.github.io/doc/flint-2.2.0-user-guide.pdf][Flint 2.2: The User Guide]]
+  - [[https://flintproject.github.io/doc/flint-2.3.0-user-guide.pdf][Flint 2.3: The User Guide]]
   - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
