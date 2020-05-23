@@ -1,4 +1,4 @@
-#+TITLE: Flint - a simulator for biological and physiological models in ordinary and stochastic differential equations
+#+TITLE: Flint - a simulator for biological and physiological models
 #+OPTIONS: ^:nil num:nil html-postamble:nil toc:nil
 #+DESCRIPTION: Flint is a simulator for biological and physiological models written in CellML, PHML, and SBML.
 #+KEYWORDS: numerical analysis, physiome, systems biology
