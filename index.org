@@ -8,7 +8,7 @@
   Flint is a simulator for biological and physiological models written in [[https://www.cellml.org/][CellML]], [[http://physiodesigner.org/phml/index.html][PHML]], and/or [[http://sbml.org/][SBML]].
   - It can numerically solve ordinary or stochastic differential equations derived from models.
   - It runs on Windows, macOS, Linux, etc.
-  - It provides graphical user interface on top of command-line interface.
+  - It provides fully-featured graphical user interface with simplified command-line interface.
   - It is open source under the MIT license.
 * Download
 You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/NEWS.org][NEWS]] about Flint 2.3 released at 2020-03-18.
@@ -27,7 +27,8 @@ You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/
 - source tarball: [[https://github.com/flintproject/Flint/archive/Flint-2.3.0.tar.gz][Flint-2.3.0.tar.gz]]
 * Documentation
   - [[https://flintproject.github.io/doc/flint-2.3.0-user-guide.pdf][Flint 2.3: The User Guide]]
-  - [[https://www.youtube.com/user/PhysioDesigner][Tutorial videos on YouTube]]
+  - [[https://www.youtube.com/channel/UCSAoJLj5BOgxRg2NhGh-Ljg][Tutorial videos on YouTube]]
+  - [[https://www.youtube.com/user/PhysioDesigner][PhysioDesigner's tutorial videos on YouTube]]: contain some examples running simulation with Flint.
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
   Flint's source repository is [[https://github.com/flintproject/Flint][in GitHub]]. Patches and/or suggestions are welcome.
