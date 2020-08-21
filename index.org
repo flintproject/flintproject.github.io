@@ -35,7 +35,10 @@ You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/
   - [[https://www.youtube.com/user/PhysioDesigner][PhysioDesigner's tutorial videos on YouTube]]: contain some examples running simulation with Flint.
   - [[http://www.physiodesigner.org/resources/specifications/specification_ISD.pdf][ISD format specification]]
 * Development
-  Flint's source repository is [[https://github.com/flintproject/Flint][in GitHub]]. Patches and/or suggestions are welcome.
+  Flint's source repository is [[https://github.com/flintproject/Flint][in GitHub]]. Patches and/or suggestions are [[https://github.com/flintproject/Flint/pulls][welcome]].
+* Support
+  Please feel free to submit an issue on [[https://github.com/flintproject/Flint/issues][Flint's GitHub Issues]] for bugs or feature requests that you come up with when using Flint.
+  For any question or suggestion about Flint, send an email to [[mailto:tabe@fixedpoint.jp][the author]] or to [[mailto:flint-discuss@googlegroups.com][the official mailing list]] if you prefer open, transparent communication.
 * Publication
   To cite Flint in a scientific article:
   - Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219.
@@ -43,5 +46,3 @@ You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/
 * Links
   - [[http://www.physiodesigner.org/][PhysioDesigner]] project
   - [[http://physiome.jp/][Physiome.jp]]
-* Contact
-  Send email to =tabe at fixedpoint dot jp= with any questions.
