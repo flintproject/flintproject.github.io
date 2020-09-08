@@ -38,11 +38,20 @@ You can read [[https://raw.githubusercontent.com/flintproject/Flint/Flint-2.3.0/
   Flint's source repository is [[https://github.com/flintproject/Flint][in GitHub]]. Patches and/or suggestions are [[https://github.com/flintproject/Flint/pulls][welcome]].
 * Support
   Please feel free to submit an issue on [[https://github.com/flintproject/Flint/issues][Flint's GitHub Issues]] for bugs or feature requests that you come up with when using Flint.
-  For any question or suggestion about Flint, send an email to [[mailto:tabe@fixedpoint.jp][the author]] or to [[mailto:flint-discuss@googlegroups.com][the official mailing list]] if you prefer open, transparent communication.
+  For any question or suggestion about Flint, send an email to [[mailto:tabe@fixedpoint.jp][the author]] or to [[https://groups.google.com/g/flint-discuss][the official mailing list]] if you prefer open, transparent communication.
+* How to cite Flint
+
+Please cite the following article when referring Flint in a scientific article:
+
+- Abe et al., (2020). Flint: a simulator for biological and physiological models in ordinary and stochastic differential equations. Journal of Open Source Software, 5(53), 2331, https://doi.org/10.21105/joss.02331
+
 * Publication
-  To cite Flint in a scientific article:
-  - Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219.
-    doi: [[https://doi.org/10.1109/SAINT.2012.40][10.1109/SAINT.2012.40]]
+
+- Uchida, S., Asai, Y., Kariya, Y. et al. Integrative and theoretical research on the architecture of a biological system and its disorder. J Physiol Sci 69, 433–451 (2019). https://doi.org/10.1007/s12576-019-00667-8
+- Asai Y, Abe T, Li L, Oka H, Nomura T and Kitano H (2015) Databases for multilevel biophysiology research available at Physiome.jp. Front. Physiol. 6:251. doi: [[https://doi.org/10.3389/fphys.2015.00251][10.3389/fphys.2015.00251]]
+- T. Okuyama et al., "Accelerating ODE-Based Simulation of General and Heterogeneous Biophysical Models Using a GPU," in IEEE Transactions on Parallel and Distributed Systems, vol. 25, no. 8, pp. 1966-1975, Aug. 2014, doi: [[https://doi.org/10.1109/TPDS.2013.198][10.1109/TPDS.2013.198]].
+- Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219. doi: [[https://doi.org/10.1109/SAINT.2012.40][10.1109/SAINT.2012.40]]
+
 * Links
   - [[http://www.physiodesigner.org/][PhysioDesigner]] project
   - [[http://physiome.jp/][Physiome.jp]]
