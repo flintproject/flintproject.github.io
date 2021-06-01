@@ -53,5 +53,4 @@ Please cite the following article when referring Flint in a scientific article:
 - Y. Asai et al., "Multilevel Modeling of Physiological Systems and Simulation Platform: PhysioDesigner, Flint and Flint K3 Service," 2012 IEEE/IPSJ 12th International Symposium on Applications and the Internet, Izmir, 2012, pp. 215-219. doi: [[https://doi.org/10.1109/SAINT.2012.40][10.1109/SAINT.2012.40]]
 
 * Links
-  - [[http://www.physiodesigner.org/][PhysioDesigner]] project
-  - [[http://physiome.jp/][Physiome.jp]]
+- [[http://www.physiodesigner.org/][PhysioDesigner]] project
